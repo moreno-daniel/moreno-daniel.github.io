@@ -4,5 +4,5 @@ const d=document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
     hambuergerMenu(".panel-btn",".panel", ".menu a");
-    typeWriter("#I-am");
+    typeWriter("#I-am",["Software Developer", "Hardware Developer", "MSc. Electronic Engineer"]);
 });

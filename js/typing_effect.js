@@ -1,17 +1,25 @@
 const d=document;
 let i = 0;
 let txt = 'Software Developer';
-let speed = 100;
+let speed = 150;
 let interval;
-export default function typeWriter (tag){
-    console.log(txt.length);
-    interval = setInterval(() => {
-            if (i === txt.length) {
-                d.querySelector(tag).innerHTML="";
-                i=0;
-            }
-            d.querySelector(tag).innerHTML += txt.charAt(i);
-            i++;
-    }, speed);
+let count=0;
+export default function typeWriter (tag, text){
+
+            interval = setInterval(() => {
+                if (i === text[count].length) {
+                    d.querySelector(tag).innerHTML="";
+                    i=0;
+                    count++;
+                    if (!(count < text.length)) {
+                        count =0;
+                    }
+                }
+                d.querySelector(tag).innerHTML += text[count].charAt(i);
+                i++;
+            }, speed);
+
+ 
+
 
 }
