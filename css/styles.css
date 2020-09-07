@@ -255,7 +255,7 @@ header h1{
 }
 
 .content-aboutme .aboutme-Item{
-    width: 50%;
+    width: 48%;
     text-align: center;
 }
 .content-aboutme .aboutme-Item .aboutme-short{
@@ -275,7 +275,7 @@ header h1{
 
 
 .container-skills{
-    background: #0b3c5d;
+    background: var(--main-color);
 }
 
 .skills-content{
@@ -317,8 +317,8 @@ header h1{
     height: 15px;
 
     background: #076585;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #c8c8c8 var(--main-color));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c8c8c8, var(--main-color)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     border-radius: 1000px;
     animation-duration: .7s;
@@ -420,16 +420,6 @@ header h1{
 
 
 
-/* .content-portfolio{
-    background-color: #135D0B;
-}
- */
-
-
-
-
-
-
 
 
 
@@ -467,3 +457,48 @@ footer .footer-item h4{
     color: #cecece;
     padding-bottom: 7px;
 }
+
+
+
+
+
+
+/* Breakpoints responsive */
+@media screen and (max-width:800px){
+    .content-aboutme{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .content-aboutme .aboutme-Item{
+        width: 95%;
+        text-align: center;
+    }
+    .content-aboutme .aboutme-Item img{
+        width: auto;
+        max-width: 100%;
+        border-radius: 20%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:600px){
+    .content-aboutme .aboutme-Item img{
+        height: auto;
+    }
+    .content-resume .education, .content-resume .work-experience{
+        text-align: left;
+    }
+    .content-resume .content-resume-item{
+        width: 90%;
+    }
+    .skills-content .skills-items{
+        width: 48%;
+    }
+    
+}
+
+
