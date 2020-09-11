@@ -1,0 +1,23 @@
+{
+  "name": "moreno-daniel.github.io",
+  "version": "1.0.0",
+  "description": "Daniel's web page",
+  "main": "index.html",
+  "scripts": {
+    "dev": "sergey --watch --output=docs",
+    "start": "sergey --output=docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moreno-daniel/moreno-daniel.github.io.git"
+  },
+  "author": "@DaniMorenoN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moreno-daniel/moreno-daniel.github.io/issues"
+  },
+  "homepage": "https://github.com/moreno-daniel/moreno-daniel.github.io#readme",
+  "dependencies": {
+    "sergey": "0.0.13"
+  }
+}

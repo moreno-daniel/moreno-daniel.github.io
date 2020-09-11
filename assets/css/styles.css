@@ -71,17 +71,6 @@ h2::after {
 
 /* *********     menu hamburguesa     ********** */
 
-header{
-    position: sticky;
-    top: 0;
-    padding: 1em;
-    background-color: var(--main-color);
-    color: var(--second-color);
-}
-header h1{
-    margin: 0 auto;
-    text-align: center;
-}
 .section {
     padding-top: 4rem;
 

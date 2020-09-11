@@ -1,7 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <sergey-import src="metas/statics"/>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Moreno</title>
+
+    <!-- Search Engine -->
+    <meta name="description" content="Daniel Moreno's web page">
+    <meta name="image" content="https://moreno-daniel.github.io/">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Daniel Moreno">
+    <meta itemprop="description" content="Daniel Moreno's web page">
+    <meta itemprop="image" content="https://moreno-daniel.github.io/">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="Daniel Moreno">
+    <meta name="og:description" content="Daniel Moreno's web page">
+    <meta name="og:image" content="assets/img/favicon/safari-pinned-tab.svg">
+    <meta name="og:url" content="https://moreno-daniel.github.io/">
+    <meta name="og:site_name" content="Daniel Moreno">
+    <meta name="og:type" content="website">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
     
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
@@ -10,7 +35,23 @@
 </head>
 
 <body>
-    <sergey-import src="header"/>
+    <header>
+    <button class="panel-btn hamburger hamburger--vortex" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    
+    <aside class="panel">
+        <nav class="menu">
+            <a href="#aboutme">About me</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#resume">Resume</a>
+            <a href="#portfolio">Portfolio</a>
+        </nav>
+    </aside>
+</header>
 
     <section class="hero-image">
         <div>
@@ -201,7 +242,17 @@
 
 
 </main>
-<sergey-import src="footer"/>
+<footer>
+    <section class="footer-item">
+        <h3>Daniel Moreno</h3>
+        <section class="social-links">
+            <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x64;&#x61;&#x6e;&#x69;&#x6d;&#x6f;&#x72;&#x65;&#x6e;&#x6f;&#x6e;&#x69;&#x6e;&#x6f;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;" class="email" target="_blank"><i class="far fa-envelope" ></i></a>
+            <a href="https://www.linkedin.com/in/daniel-moreno-nino/" class="linkedin" target="_blank"><i class="fab fa-linkedin-in" ></i></a>
+            <a href="skype:moreno-daniel?chat" class="skype" target="_blank"><i class="fab fa-skype"></i></a>
+        </section>
+        <h4>Made with <i class="far fa-heart"></i> in quarantine </h4>
+    </section>
+</footer>
 
 <script src="assets/js/main.js" type="module"></script>
 </body>

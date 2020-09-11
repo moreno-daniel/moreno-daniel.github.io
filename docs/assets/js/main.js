@@ -1,0 +1,8 @@
+import hambuergerMenu from "./hamburger_menu.js";
+import typeWriter from "./typing_effect.js"
+const d=document;
+
+d.addEventListener("DOMContentLoaded", (e) => {
+    hambuergerMenu(".panel-btn",".panel", ".menu a");
+    typeWriter("#I-am",["Software Developer", "IoT Expert","Hardware Developer", "MSc. Electronic Engineer"]);
+});
