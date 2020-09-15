@@ -408,7 +408,49 @@ h2::after {
 
 
 
+.container-portfolio{
+    background: var(--main-color);
+}
 
+.portfolio-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    
+}
+
+.portfolio-content .portfolio-items{
+    width: 30.3333%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 40px 35px;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+}
+
+.portfolio-content .portfolio-items .skill{
+    cursor: pointer;
+    color: #FFF;
+}
+.portfolio-content .portfolio-items a:hover {
+    color: #135D0B;
+}
+
+
+
+.portfolio-content .portfolio-items .portfolio::after {
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 90%;
+        content: "90%";
+    }
+}
 
 
 
