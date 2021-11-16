@@ -324,8 +324,8 @@ h2::after {
 
 @keyframes html {
     to {
-        width: 90%;
-        content: "90%";
+        width: 10%;
+        content: "10%";
     }
 }
 
@@ -417,25 +417,35 @@ h2::after {
     flex-wrap: wrap;
     justify-content: space-evenly;
     
-    
 }
 
 .portfolio-content .portfolio-items{
-    width: 30.3333%;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    padding: 40px 35px;
+    width: 45%;
     margin-bottom: 20px;
     position: relative;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+     
+}
+.portfolio-content .portfolio-items div{
+    
+    background-color: rgba(255, 255, 255, 0.75); 
+    padding: 80px 35px;
+    border-radius: 30px;
+    
+    
 }
 
 .portfolio-content .portfolio-items .skill{
     cursor: pointer;
     color: #FFF;
 }
-.portfolio-content .portfolio-items a:hover {
+.portfolio-content .portfolio-items h1:hover {
     color: #135D0B;
 }
 
